@@ -1,4 +1,8 @@
-arr = list(map(int, input("Enter elements: ").split()))
+n = int(input("Enter number of elements: "))
+
+arr = []
+for i in range(n):
+    arr.append(int(input()))
 
 minimum = arr[0]
 maximum = arr[0]
@@ -10,3 +14,4 @@ for num in arr:
         maximum = num
 
 print([minimum, maximum])
+
