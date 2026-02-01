@@ -1,6 +1,8 @@
-arr = list(map(int, input("Enter elements: ").split()))
+n = int(input("Enter number of elements: "))
 
-n = len(arr)
+arr = []
+for i in range(n):
+    arr.append(int(input()))
 
 for i in range(n // 2):
     temp = arr[i]
