@@ -1,5 +1,12 @@
-a = list(map(int, input("Enter elements of array A: ").split()))
-b = list(map(int, input("Enter elements of array B: ").split()))
+n1 = int(input("Enter number of elements in A: "))
+a = []
+for i in range(n1):
+    a.append(int(input()))
+
+n2 = int(input("Enter number of elements in B: "))
+b = []
+for i in range(n2):
+    b.append(int(input()))
 
 union = []
 
@@ -12,3 +19,4 @@ for num in b:
         union.append(num)
 
 print(union)
+
